@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(
+    90deg,  /* ลายทางในแนวนอน */
+    #daefff 0%,  /* สีฟ้าอ่อน */
+    #daefff 15px, /* ความกว้างของลายทาง */
+    #bfe3fc 10px,  /* สีขาว */
+    #bfe3fc 30px   /* ความกว้างของสีขาว */
+  );
+
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+ .container {
+      background-color: #FFEAF1;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 300px;
+      width: 100%;
+ 
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 20px;
+}
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #81abed;
+      border-radius: 10px;
+      outline: none;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #81abed;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #6c96d8;
+    }
+
+    #statusResult {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #555;
+          }
+      #queueInput {text-align:center;}
+
+.container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #95cdf4;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 10;
+}
+
+.logo-inside {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+
+@font-face {
+  font-family: 'MyCuteFont';
+  src: url('https://files.catbox.moe/kn7xfp.woff') format('woff');
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyCuteFont', sans-serif;
+}
+
+#statusResult {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: white;
+  color: #c2185b;
+  font-size: 18px;
+  border: 2px dashed #81abed;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #81abed;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: pop-in 0.5s ease-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
